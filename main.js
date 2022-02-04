@@ -91,10 +91,33 @@ const footlnk = document.querySelector('.foot a')
 
 function homeScroll() {
   locoScroll.scrollTo('#home')
+  // locoScroll.on('scroll', ScrollTrigger.update)
 }
+function aboutScroll() {
+  locoScroll.scrollTo('#about')
+}
+function projectsScroll() {
+  locoScroll.scrollTo('#projects')
+}
+function contactScroll() {
+  locoScroll.scrollTo('#contact')
+}
+
 linkArray[0].addEventListener('click', (e) => {
   e.preventDefault()
   homeScroll()
+})
+linkArray[1].addEventListener('click', (e) => {
+  e.preventDefault()
+  aboutScroll()
+})
+linkArray[2].addEventListener('click', (e) => {
+  e.preventDefault()
+  projectsScroll()
+})
+linkArray[3].addEventListener('click', (e) => {
+  e.preventDefault()
+  contactScroll()
 })
 footlnk.addEventListener('click', (e) => {
   e.preventDefault()
