@@ -1,0 +1,171 @@
+@media screen and (max-width: 900px) {
+  #home header h1 {
+    letter-spacing: 3px;
+  }
+  .fed {
+    letter-spacing: 1px;
+  }
+  .navList li a {
+    display: inline-block;
+    text-align: center;
+    padding-left: 25px;
+    width: 100%;
+  }
+  .navList li:nth-of-type(2) a {
+    width: 100%;
+    padding-left: 25px;
+  }
+  .navList li:nth-of-type(3) a {
+    width: 100%;
+    padding-left: 25px;
+  }
+  .navList li:nth-of-type(4) a {
+    width: 100%;
+    padding-left: 25px;
+  }
+}
+@media screen and (max-width: 700px) {
+  #home {
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 10%;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column-reverse;
+  }
+
+  .social {
+    margin: 0 auto;
+    padding-bottom: 20px;
+    left: 0;
+    height: auto;
+    width: 200px;
+    transform: none;
+    flex-direction: row;
+    position: relative;
+    /* right: -3%; */
+  }
+
+  .socialLine {
+    bottom: 14px;
+    height: 2px;
+    width: 100%;
+    transform: translateY(-50%), rotate(90deg);
+  }
+
+  .loc {
+    /* top: 62%;
+     right: 45%; */
+    /* width: 63%;
+     position: relative;
+     top: 0;
+     right: 0;
+     margin-bottom: 20px; */
+    right: 65%;
+  }
+  .locLine {
+    width: 1.5px;
+  }
+  .loc span {
+    padding-top: 3px;
+    padding-left: 2px;
+    padding-right: 2px;
+  }
+
+  .loc .one {
+    text-align: left;
+  }
+  .skillsGrid {
+    gap: 8px 0;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+  }
+}
+@media screen and (max-width: 1023px) {
+  #projects {
+    margin-bottom: 25%;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .projectBox {
+    padding: 0;
+  }
+  .project {
+    padding-top: 20px;
+    margin: 15px 0;
+    flex-direction: column;
+  }
+  .project .img {
+    margin-bottom: 20px;
+    width: 100%;
+  }
+  .project .img img {
+    max-width: 100%;
+    max-height: 600px;
+  }
+  .project .text p {
+    padding: 0;
+  }
+  .project:nth-of-type(even) {
+    flex-direction: column;
+  }
+  #contact {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .content {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .content p {
+    padding-left: 2%;
+    padding-right: 2%;
+  }
+  .contactBox {
+    width: 100%;
+    margin-top: 30px;
+  }
+  .opt {
+    padding-left: 2%;
+    padding-right: 4%;
+  }
+}
+@media only screen and (max-width: 426px) and (min-width: 319px) {
+  nav {
+    position: absolute;
+  }
+  .social a .socialTip {
+    left: -18px;
+  }
+  #about,
+  #projects,
+  #contact {
+    margin-top: 25%;
+  }
+  .textBox {
+    margin-bottom: 30%;
+  }
+  .project .text {
+    padding: 0 5px;
+  }
+  #contact {
+    padding-top: 25%;
+    padding-bottom: 30%;
+  }
+
+  .contactBox {
+    width: 100%;
+  }
+
+  .foot img {
+    height: 65px;
+  }
+
+  .toTop {
+    position: fixed;
+    bottom: 1.5%;
+    display: block;
+    padding: 8px 10px 4px;
+    font-size: 28px;
+  }
+}
