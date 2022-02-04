@@ -33,6 +33,7 @@ document.addEventListener('DOMContentLoaded', () => {
   function updateLoad() {
     load += load < 99
     loadTime.innerHTML = load
+    document.body.style.overflowY = 'scroll'
   }
 })
 
