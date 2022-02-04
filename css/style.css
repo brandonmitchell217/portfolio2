@@ -316,7 +316,7 @@ section {
   bottom: 0;
   right: -3px;
   width: 3px;
-  height: 0%;
+  height: 100%;
   /* border-left: 2px solid #fc440f; */
   background: #fc440f;
   border-radius: 4px;
