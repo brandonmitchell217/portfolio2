@@ -70,7 +70,7 @@ document.addEventListener('DOMContentLoaded', () => {
     { autoAlpha: 0 },
     { autoAlpha: 1, stagger: 0.25, delay: 7.48 }
   )
-
+  locoScroll.update()
   function updateLoad() {
     load += load < 99
     loadTime.innerHTML = load
