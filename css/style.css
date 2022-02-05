@@ -278,6 +278,16 @@ section {
   border-radius: 4px;
   overflow-y: hidden;
 }
+.socialLine1 {
+  position: absolute;
+  bottom: 14px;
+  height: 2px;
+  width: 100%;
+  transform: translateY(-50%), rotate(90deg);
+  background: #fc440f;
+  border-radius: 4px;
+  overflow-y: hidden;
+}
 .social a {
   position: relative;
   font-size: clamp(24px, calc(1.25rem + ((1vw - 3.2px) * 0.625)), 30px);

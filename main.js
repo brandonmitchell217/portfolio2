@@ -29,6 +29,35 @@ gsap.set('.ghLink', {
 document.addEventListener('DOMContentLoaded', () => {
   gsap.to('.layer', { y: '-100vh', stagger: 0.2, delay: 4.1 })
   gsap.to('.preloader', { autoAlpha: 0, delay: 5.1 })
+  gsap.fromTo(
+    '.social a',
+    { autoAlpha: 0 },
+    { autoAlpha: 1, stagger: 0.35, delay: 5.25 }
+  )
+  if (window.innerWidth > 700) {
+    gsap.fromTo(
+      '.socialLine',
+      { scale: 0 },
+      { scale: 1, duration: 1.5, delay: 6.42 }
+    )
+  } else {
+    gsap.set('.socialLine', { className: 'socialLine1' })
+    gsap.fromTo(
+      '.socialLine1',
+      { scale: 0 },
+      { scale: 1, duration: 1.5, delay: 6.42 }
+    )
+  }
+  gsap.fromTo(
+    '.locLine',
+    { height: 0 },
+    { height: '100%', duration: 1, delay: 7.45 }
+  )
+  gsap.fromTo(
+    '.loc span',
+    { autoAlpha: 0 },
+    { autoAlpha: 1, stagger: 0.25, delay: 7.48 }
+  )
   setInterval(updateLoad, 40)
   function updateLoad() {
     load += load < 99
@@ -91,7 +120,6 @@ const footlnk = document.querySelector('.foot a')
 
 function homeScroll() {
   locoScroll.scrollTo('#home')
-  // locoScroll.on('scroll', ScrollTrigger.update)
 }
 function aboutScroll() {
   locoScroll.scrollTo('#about')
@@ -123,9 +151,20 @@ footlnk.addEventListener('click', (e) => {
   e.preventDefault()
   homeScroll()
 })
-
+function socialLineUpdate() {
+  if (window.innerWidth > 700) {
+    gsap.set('.socialLine1', { className: 'socialLine' })
+    gsap.set('.socialLine', { xPercent: 0, yPercent: 35 })
+  } else {
+    gsap.set('.socialLine', { className: 'socialLine1' })
+    gsap.set('.socialLine1', { xPercent: 0, y: 0 })
+  }
+  // locoScroll.update()
+}
 ScrollTrigger.addEventListener('refresh', () => locoScroll.update())
-// ScrollTrigger.addEventListener('resize', () => locoScroll.update())
+window.addEventListener('resize', () => {
+  socialLineUpdate()
+})
 ScrollTrigger.refresh()
 /*********************** To Top Button *****************************/
 const toTop = document.querySelector('.toTop')

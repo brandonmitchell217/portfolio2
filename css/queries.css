@@ -46,12 +46,12 @@
     /* right: -3%; */
   }
 
-  .socialLine {
+  /* .socialLine {
     bottom: 14px;
     height: 2px;
     width: 100%;
     transform: translateY(-50%), rotate(90deg);
-  }
+  } */
 
   .loc {
     /* top: 62%;
