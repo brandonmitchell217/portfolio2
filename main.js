@@ -30,6 +30,17 @@ document.addEventListener('DOMContentLoaded', () => {
   gsap.to('.layer', { y: '-100vh', stagger: 0.2, delay: 4.1 })
   gsap.to('.preloader', { autoAlpha: 0, delay: 5.1 })
   gsap.fromTo(
+    'header',
+    { scale: 1.12, autoAlpha: 0.5 },
+    {
+      scale: 1,
+      autoAlpha: 1,
+      delay: 5.2,
+      duration: 1.5,
+      ease: 'elastic.out(1, 0.3)',
+    }
+  )
+  gsap.fromTo(
     '.social a',
     { autoAlpha: 0 },
     { autoAlpha: 1, stagger: 0.35, delay: 5.25 }
