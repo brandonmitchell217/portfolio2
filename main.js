@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded', () => {
   setInterval(updateLoad, 40)
   gsap.fromTo(
     'header',
-    { scale: 1.07, autoAlpha: 0.5 },
+    { scale: 0.85, autoAlpha: 0.5 },
     {
       scale: 1,
       autoAlpha: 1,
@@ -70,9 +70,7 @@ document.addEventListener('DOMContentLoaded', () => {
     { autoAlpha: 0 },
     { autoAlpha: 1, stagger: 0.25, delay: 7.48 }
   )
-  // gsap.set('header', { x: 0, y: 0 })
-  locoScroll.update()
-  ScrollTrigger.refresh()
+
   function updateLoad() {
     load += load < 99
     loadTime.innerHTML = load
