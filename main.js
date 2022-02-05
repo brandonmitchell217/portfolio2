@@ -72,6 +72,7 @@ document.addEventListener('DOMContentLoaded', () => {
   )
   // gsap.set('header', { x: 0, y: 0 })
   locoScroll.update()
+  ScrollTrigger.refresh()
   function updateLoad() {
     load += load < 99
     loadTime.innerHTML = load
