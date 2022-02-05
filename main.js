@@ -29,6 +29,7 @@ gsap.set('.ghLink', {
 document.addEventListener('DOMContentLoaded', () => {
   gsap.to('.layer', { y: '-100vh', stagger: 0.2, delay: 4.1 })
   gsap.to('.preloader', { autoAlpha: 0, delay: 5.1 })
+  setInterval(updateLoad, 40)
   gsap.fromTo(
     'header',
     { scale: 1.12, autoAlpha: 0.5 },
@@ -69,7 +70,7 @@ document.addEventListener('DOMContentLoaded', () => {
     { autoAlpha: 0 },
     { autoAlpha: 1, stagger: 0.25, delay: 7.48 }
   )
-  setInterval(updateLoad, 40)
+
   function updateLoad() {
     load += load < 99
     loadTime.innerHTML = load
