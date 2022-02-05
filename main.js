@@ -70,7 +70,7 @@ document.addEventListener('DOMContentLoaded', () => {
     { autoAlpha: 0 },
     { autoAlpha: 1, stagger: 0.25, delay: 7.48 }
   )
-
+  gsap.set('header', { x: 0, y: 0 })
   function updateLoad() {
     load += load < 99
     loadTime.innerHTML = load
