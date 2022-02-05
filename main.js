@@ -35,7 +35,7 @@ document.addEventListener('DOMContentLoaded', () => {
     {
       scale: 1,
       autoAlpha: 1,
-      delay: 5.2,
+      delay: 5.23,
       duration: 1.5,
       ease: 'elastic.out(1, 0.3)',
     }

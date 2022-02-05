@@ -17,6 +17,7 @@ body {
   position: fixed;
   top: 0;
   left: 0;
+  background: #191923;
   z-index: 11;
   height: 100%;
   width: 100%;
@@ -37,14 +38,6 @@ body {
   width: 20%;
   border-right: 1px solid #191923;
   background: #c2e812;
-}
-.preloader .dark {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  background: #191923;
 }
 
 .preloader .green #loadTime {
@@ -505,6 +498,9 @@ section {
 .project:nth-of-type(even) {
   flex-direction: row;
 }
+.project:nth-of-type(even) .text {
+  width: 100%;
+}
 
 .project::after {
   content: '';
@@ -537,7 +533,7 @@ section {
   width: auto;
   border-radius: 16px;
 }
-/********* Look at this!!!!!!  *********/
+
 .project .text {
   padding: 0 6em;
 }
@@ -553,7 +549,7 @@ section {
 .project .text p {
   margin: 10px 0 20px;
   padding: 0 2%;
-  max-width: 60ch;
+  /* max-width: 60ch; */
   font-size: 14px;
   font-weight: 400;
 }
@@ -581,7 +577,7 @@ section {
 
 .project .text .links a {
   position: relative;
-  width: 40%;
+  width: 150px;
   max-width: 280px;
   padding: 12px 0 7px;
   border: 1px solid #ebe9e9;
