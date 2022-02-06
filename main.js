@@ -8,9 +8,6 @@ const linkArray = Array.from(navLinks)
 const loadTime = document.getElementById('loadTime')
 let load = 1
 gsap.set('.navLink', { opacity: 0, skewY: 30 })
-// gsap.set('.burger', { xPercent: -150, autoAlpha: 0 })
-// gsap.set('.loc .spn', { autoAlpha: 0, skewX: 20 })
-// gsap.set('.social a', { autoAlpha: 0 })
 const sections = document.querySelectorAll('section')
 gsap.set('.textBox p', {
   y: -20,
@@ -70,7 +67,6 @@ document.addEventListener('DOMContentLoaded', () => {
     { autoAlpha: 0 },
     { autoAlpha: 1, stagger: 0.25, delay: 7.48 }
   )
-  locoScroll.update()
   function updateLoad() {
     load += load < 99
     loadTime.innerHTML = load

@@ -1,3 +1,14 @@
+@media (prefers-color-scheme: light) {
+  body {
+    color: var(--dark);
+    background: var(--white);
+  }
+  /* body.darkTheme {
+    color: var(--white);
+    background: var(--dark);
+  } */
+}
+
 @media screen and (max-width: 900px) {
   #home header h1 {
     letter-spacing: 3px;
@@ -64,7 +75,7 @@
     right: 65%;
   }
   .locLine {
-    width: 1.5px;
+    width: 2px;
   }
   .loc span {
     padding-top: 3px;
