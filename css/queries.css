@@ -1,13 +1,10 @@
-@media (prefers-color-scheme: light) {
+/* @media (prefers-color-scheme: light) {
   body {
     color: var(--dark);
     background: var(--white);
   }
-  /* body.darkTheme {
-    color: var(--white);
-    background: var(--dark);
-  } */
-}
+
+} */
 
 @media screen and (max-width: 900px) {
   #home header h1 {
