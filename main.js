@@ -330,7 +330,7 @@ ScrollTrigger.create({
 })
 
 /********************  Skills images animation **********************/
-let imgs = gsap.utils.toArray('.skillsGrid img')
+let imgs = gsap.utils.toArray('.skillsGrid svg')
 function skillImgAni() {
   gsap.set('.content', { autoAlpha: 0, rotateY: -90 })
   imgs.forEach((img, index) => {
