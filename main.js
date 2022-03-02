@@ -6,6 +6,7 @@ const navList = document.querySelector('.navList')
 const navLinks = document.querySelectorAll('.navLink')
 const linkArray = Array.from(navLinks)
 const loadTime = document.getElementById('loadTime')
+
 let load = 1
 gsap.set('.navLink', { opacity: 0, skewY: 30 })
 const sections = document.querySelectorAll('section')
