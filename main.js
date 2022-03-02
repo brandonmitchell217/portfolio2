@@ -2,7 +2,7 @@ gsap.registerPlugin(ScrollTrigger)
 
 const burger = document.querySelector('.burger')
 const exit = document.querySelector('.close')
-const navList = document.querySelector('ul')
+const navList = document.querySelector('.navList')
 const navLinks = document.querySelectorAll('.navLink')
 const linkArray = Array.from(navLinks)
 const loadTime = document.getElementById('loadTime')

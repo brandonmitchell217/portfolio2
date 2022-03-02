@@ -79,6 +79,7 @@ a {
   color: var(--white);
   text-decoration: none;
 }
+
 .lightTheme a {
   color: var(--dark);
 }
@@ -111,15 +112,11 @@ nav {
   left: 0;
   z-index: 10;
   background: var(--dark);
-  height: 100%;
+  height: 100vh;
   width: 100%;
   transform: translateX(-100%) scale(0);
   padding: 2vh 0;
-  list-style: none;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  flex-direction: column;
+
   transition: all 300ms cubic-bezier(0.25, 0.46, 0.45, 0.34);
 }
 
@@ -144,13 +141,21 @@ nav {
 .open {
   transform: translateX(0) scale(1);
 }
-
-.navList li {
+.navList ul {
+  width: 100%;
+  height: 100%;
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+}
+.navList ul li {
   width: 100%;
 
   /* background: red; */
 }
-.navList li a {
+.navList ul li a {
   padding: 10px 2% 0 5%;
   font-family: 'Syncopate';
   font-weight: 700;
@@ -173,7 +178,8 @@ nav {
 .navList li:nth-of-type(4) a {
   padding-left: 48%;
 }
-.navList li:nth-of-type(5) {
+
+.navList .close {
   position: absolute;
   top: 20px;
   right: 40px;
@@ -184,10 +190,9 @@ nav {
   text-align: right;
   transition: all 300ms cubic-bezier(0.25, 0.46, 0.45, 0.24);
 }
-.navList li:nth-of-type(5):hover {
+.navList .close:hover {
   color: var(--red);
 }
-
 .navList li a span {
   -webkit-text-fill-color: transparent;
   -ms-text-fill-color: transparent;
