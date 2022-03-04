@@ -62,13 +62,6 @@
   } */
 
   .loc {
-    /* top: 62%;
-     right: 45%; */
-    /* width: 63%;
-     position: relative;
-     top: 0;
-     right: 0;
-     margin-bottom: 20px; */
     right: 65%;
   }
   .locLine {
@@ -110,6 +103,9 @@
   .project .img img {
     max-width: 100%;
     max-height: 600px;
+  }
+  .project .text {
+    padding: 0 3em;
   }
   .project .text p {
     padding: 0;
