@@ -174,7 +174,7 @@
   }
 }
 
-@media only screen and (orientation: landscape) {
+@media only screen and (max-width: 800px) and (orientation: landscape) {
   #home header h1 {
     font-size: 5.25em;
   }
