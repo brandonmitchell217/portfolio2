@@ -173,3 +173,12 @@
     font-size: 28px;
   }
 }
+
+@media only screen and (orientation: landscape) {
+  #home header h1 {
+    font-size: 5.5em;
+  }
+  .fed {
+    font-size: 1.25em;
+  }
+}
