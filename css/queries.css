@@ -134,7 +134,7 @@
     padding-right: 4%;
   }
 }
-@media only screen and (max-width: 426px) and (min-width: 319px) {
+@media only screen and (max-width: 426px) {
   nav {
     position: absolute;
   }
@@ -148,6 +148,12 @@
   }
   .textBox {
     margin-bottom: 30%;
+  }
+  .skillsGrid {
+    width: 100%;
+  }
+  .skillsGrid svg {
+    overflow: visible;
   }
   .project .text {
     padding: 0 5px;
