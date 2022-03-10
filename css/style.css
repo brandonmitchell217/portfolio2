@@ -834,7 +834,6 @@ section {
   border-radius: 4px;
   font-weight: 500;
   font-size: clamp(16px, calc(1.125rem + ((1vw - 3.2px) * 0.375)), 24px);
-  text-transform: uppercase;
   text-align: center;
   overflow: hidden;
   -webkit-transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
