@@ -40,7 +40,7 @@
   }
   .project .text {
     width: 100%;
-    padding: 2em;
+    padding: 2em 0;
   }
   .project .text p {
     padding: 0;
