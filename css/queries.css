@@ -173,7 +173,7 @@
 
   .toTop {
     position: fixed;
-    bottom: 1.5%;
+    bottom: 1em;
     display: block;
     padding: 8px 10px 4px;
     font-size: 28px;
@@ -186,5 +186,14 @@
   }
   .fed {
     font-size: 1.25em;
+  }
+}
+
+@media (min-width: 2000px) {
+  .project {
+    justify-content: space-evenly;
+  }
+  .project .text {
+    flex: 0.5;
   }
 }

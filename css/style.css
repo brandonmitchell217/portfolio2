@@ -488,11 +488,15 @@ section {
   margin-bottom: 15%;
   /* padding: 30px 0; */
   padding: 30px calc(8vw - 15px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .textBox p {
-  /* padding: 0 calc(8vw - 15px); */
-  line-height: 1.3;
+  max-width: 1800px;
+  width: 100%;
+  line-height: 2;
   letter-spacing: 2px;
   font-weight: 500;
   font-size: clamp(18px, calc(1.125rem + ((1vw - 3.2px) * 0.75)), 30px);
@@ -502,7 +506,7 @@ section {
 .skills {
   position: relative;
   width: 100%;
-  margin-bottom: 5%;
+  margin-top: 16%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -510,9 +514,9 @@ section {
 }
 
 .skillsGrid {
-  width: min(800px, 70%);
-  padding-top: 2vh;
-  /* padding: 10vh 0; */
+  max-width: 1200px;
+  width: 100%;
+  margin: 5% 0 0;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
@@ -520,30 +524,19 @@ section {
   place-items: center;
 }
 .skillsGrid .icon {
-  /* height: 180px;
-  width: 80px; */
   position: relative;
   cursor: pointer;
-  /* width: min(25vw, 50px); */
-  /* height: 100px; */
 }
-/* .skillsGrid img {
+.skillsGrid img {
+  width: 10vw;
+  min-width: 120px;
   height: auto;
-  width: min(25vw, 120px);
-} */
+}
 
-.skillsGrid svg {
-  /* position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0; */
+/* .skillsGrid svg {
   height: auto;
   width: min(25vw, 100px);
-  /* width: 99px; */
   fill: var(--green);
-  /* background: red;
-  border: 1px solid green; */
 }
 .skillsGrid svg path {
   stroke: var(--green);
@@ -564,7 +557,7 @@ section {
 }
 .lightTheme .skillsGrid svg path {
   stroke: var(--dark);
-}
+} */
 
 .skillsGrid .icon .tip {
   position: absolute;
@@ -600,7 +593,7 @@ section {
 }
 
 #projects {
-  margin-top: 15%;
+  margin-top: 10%;
   padding: 15% 0 10%;
 }
 
@@ -625,8 +618,9 @@ section {
 .project:nth-of-type(even) {
   flex-direction: row;
 }
+
 .project:nth-of-type(even) .text {
-  width: 100%;
+  /* width: 100%; */
 }
 
 .project::after {
@@ -650,18 +644,13 @@ section {
 }
 
 .project .img img {
-  /* position: absolute;
-  top: 0;
-  left: 0;
-  height: 350px;
-  max-width: 600px;
-  width: 100%; */
-  max-height: 350px;
+  /* max-height: 350px; */
+  max-height: 450px;
   width: auto;
-  /* border-radius: 16px; */
 }
 
 .project .text {
+  flex: 1;
   padding: 0 6em;
 }
 /* */
@@ -934,7 +923,7 @@ section {
 .foot {
   width: 100%;
   position: absolute;
-  bottom: 0;
+  bottom: 1em;
   padding: 18px 0;
   display: grid;
   place-items: center;
@@ -960,7 +949,7 @@ section {
 
 .toTop {
   position: absolute;
-  bottom: 15px;
+  bottom: 18px;
   left: 2%;
   transform: translate(-2%, -2%);
   padding: 14px 18px 10px;
