@@ -24,6 +24,7 @@ gsap.set('.ghLink', {
   autoAlpha: 0,
   rotate: 10,
 })
+
 document.addEventListener('DOMContentLoaded', () => {
   gsap.to('.layer', { y: '-100vh', stagger: 0.2, delay: 4.1 })
   gsap.to('.preloader', { autoAlpha: 0, delay: 5.1 })
@@ -331,7 +332,7 @@ ScrollTrigger.create({
 })
 
 /********************  Skills images animation **********************/
-let imgs = gsap.utils.toArray('.skillsGrid svg')
+let imgs = gsap.utils.toArray('.skillsGrid img')
 function skillImgAni() {
   gsap.set('.content', { autoAlpha: 0, rotateY: -90 })
   imgs.forEach((img, index) => {
