@@ -605,8 +605,6 @@ section {
   width: 100%;
   margin: 40px 0;
   position: relative;
-  /* padding-right: calc(8vw - 15px);
-  padding-left: calc(8vw - 15px); */
   padding-bottom: 50px;
   display: flex;
   flex-direction: row-reverse;
@@ -639,14 +637,16 @@ section {
 }
 
 .project .img {
+  max-height: 450px;
+  flex: 2;
   position: relative;
   /* border-radius: 16px; */
 }
 
 .project .img img {
   /* max-height: 350px; */
-  max-height: 450px;
-  width: auto;
+  /* height: 100%; */
+  max-width: 100%;
 }
 
 .project .text {
@@ -656,7 +656,8 @@ section {
 /* */
 .project .text h3 {
   /* font-size: 26px; */
-  font-size: clamp(20px, calc(1.25rem + ((1vw - 3.2px) * 0.375)), 26px);
+  /* font-size: clamp(20px, calc(1.25rem + ((1vw - 3.2px) * 0.375)), 26px); */
+  font-size: min(max(20px, 4vw), 30px);
   font-weight: 700;
   letter-spacing: 2px;
   text-transform: uppercase;
@@ -665,8 +666,7 @@ section {
 .project .text p {
   margin: 10px 0 20px;
   padding: 0 2%;
-  /* max-width: 60ch; */
-  font-size: 14px;
+  font-size: min(max(14px, 1.75vw), 20px);
   font-weight: 400;
 }
 
@@ -693,13 +693,13 @@ section {
 
 .project .text .links a {
   position: relative;
-  width: 150px;
-  max-width: 280px;
+  min-width: 120px;
+  width: 40%;
   padding: 12px 0 7px;
   border: 1px solid var(--white);
   border-radius: 4px;
   font-weight: 500;
-  font-size: clamp(16px, calc(1.125rem + ((1vw - 3.2px) * 0.375)), 24px);
+  font-size: min(max(16px, 2vw), 28px);
   text-transform: uppercase;
   text-align: center;
   overflow: hidden;
