@@ -180,9 +180,7 @@
   .skillsGrid {
     width: 100%;
   }
-  .skillsGrid svg {
-    overflow: visible;
-  }
+
   .project .text {
     padding: 0 5px;
   }

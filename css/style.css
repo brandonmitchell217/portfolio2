@@ -529,35 +529,9 @@ section {
 }
 .skillsGrid img {
   width: 10vw;
-  min-width: 120px;
+  min-width: 90px;
   height: auto;
 }
-
-/* .skillsGrid svg {
-  height: auto;
-  width: min(25vw, 100px);
-  fill: var(--green);
-}
-.skillsGrid svg path {
-  stroke: var(--green);
-}
-.skillsGrid svg path rect {
-  fill: var(--white);
-}
-#js {
-  fill: none;
-}
-#jsLet {
-  fill: var(--green);
-}
-
-.lightTheme .skillsGrid svg,
-.lightTheme #jsLet {
-  fill: var(--dark);
-}
-.lightTheme .skillsGrid svg path {
-  stroke: var(--dark);
-} */
 
 .skillsGrid .icon .tip {
   position: absolute;
@@ -617,10 +591,6 @@ section {
   flex-direction: row;
 }
 
-.project:nth-of-type(even) .text {
-  /* width: 100%; */
-}
-
 .project::after {
   content: '';
   height: 2px;
@@ -640,12 +610,9 @@ section {
   max-height: 450px;
   flex: 2;
   position: relative;
-  /* border-radius: 16px; */
 }
 
 .project .img img {
-  /* max-height: 350px; */
-  /* height: 100%; */
   max-width: 100%;
 }
 
@@ -653,10 +620,8 @@ section {
   flex: 1;
   padding: 0 6em;
 }
-/* */
+
 .project .text h3 {
-  /* font-size: 26px; */
-  /* font-size: clamp(20px, calc(1.25rem + ((1vw - 3.2px) * 0.375)), 26px); */
   font-size: min(max(20px, 4vw), 30px);
   font-weight: 700;
   letter-spacing: 2px;
@@ -927,7 +892,6 @@ section {
   padding: 18px 0;
   display: grid;
   place-items: center;
-  /* margin-top: 50px; */
 }
 .foot img {
   margin-bottom: 8px;
