@@ -161,6 +161,7 @@ footlnk.addEventListener('click', (e) => {
   e.preventDefault()
   homeScroll()
 })
+
 function socialLineUpdate() {
   if (window.innerWidth > 700) {
     gsap.set('.socialLine1', { className: 'socialLine' })

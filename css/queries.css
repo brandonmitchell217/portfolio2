@@ -214,3 +214,9 @@
     font-size: 1.25em;
   }
 }
+
+@media (min-width: 319px) and (max-width: 426px) {
+  .project .text {
+    margin: -20px 0 0;
+  }
+}
