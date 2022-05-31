@@ -752,7 +752,9 @@ section {
 }
 .content .leftTop p {
   max-width: 38ch;
-  margin-bottom: 10%;
+  /* In case of opportunities */
+  /* margin-bottom: 10%; */
+  margin: 5% 0;
   font-weight: 400;
   line-height: 1.5;
   font-size: clamp(16px, calc(1rem + ((1vw - 3.2px) * 0.375)), 22px);
